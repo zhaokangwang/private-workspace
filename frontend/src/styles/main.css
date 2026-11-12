@@ -1,0 +1,96 @@
+:root {
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Microsoft YaHei',
+    sans-serif;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --color-background: #f4f7f6;
+  --color-surface: #fff;
+  --color-text: #24392e;
+  --color-muted: #63776b;
+  --color-border: #e4ebe6;
+  --color-primary: #357d5e;
+  --color-on-primary: #fff;
+  --color-error: #b32632;
+}
+* {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+p,
+dl,
+dd {
+  margin: 0;
+}
+body {
+  min-width: 360px;
+}
+button {
+  font: inherit;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+  background: white;
+  color: var(--color-text);
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+button:hover:not(:disabled) {
+  background: #edf5ef;
+}
+button:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+button,
+input,
+textarea,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+:focus-visible {
+  outline: 2px solid #68a68a;
+  outline-offset: 3px;
+}
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary);
+  color: white;
+  font-size: 13px;
+  padding: 10px 14px;
+  font-weight: 500;
+}
+.primary-button:hover:not(:disabled) {
+  background: #28694c;
+}
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  background: transparent;
+  color: var(--color-muted);
+  border-color: transparent;
+}
+.error-message {
+  color: var(--color-error);
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

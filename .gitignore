@@ -1,0 +1,32 @@
+# 本地配置和运行数据
+.env
+.env.*
+!.env.example
+data/
+*.db
+*.db-shm
+*.db-wal
+
+# Python 环境及检查缓存
+.venv/
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.pytest_cache/
+.pyright/
+.coverage
+.coverage.*
+htmlcov/
+coverage/
+
+# 前端依赖和构建产物
+node_modules/
+dist/
+*.tsbuildinfo
+.eslintcache
+
+# 本机编辑器和日志
+.idea/
+*.log
+.DS_Store
+Thumbs.db
